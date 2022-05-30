@@ -26,6 +26,6 @@ describe("Attack", function () {
         let tx = await _attackContract.attack();
         await tx.wait();
 
-        expect(await _goodContract.owner()).to.equal(_attackContract.owner);
+        expect(await _goodContract.owner()).to.equal(_attackContract.address);
     })
 })
